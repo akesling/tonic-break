@@ -1,5 +1,5 @@
 [package]
-name = "foo"
+name = "foobar"
 version = "0.1.0"
 authors = ["Alex Kesling <alex@kesling.co>"]
 edition = "2018"
