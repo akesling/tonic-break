@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example.foobar.v1;
+
+message Foo { string msg = 1; }
+
+message CreateFooRequest { Foo foo = 1; }
+message CreateFooResponse { Foo foo = 1; }
+
+service FooService {
+    rpc Create (CreateFooRequest) returns (CreateFooResponse);
+}

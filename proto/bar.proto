@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example.foobar.v1;
+
+message Bar { string msg = 1; }
+
+message CreateBarRequest { Bar bar = 1; }
+message CreateBarResponse { Bar bar = 1; }
+
+service BarService {
+    rpc Create (CreateBarRequest) returns (CreateBarResponse);
+}
